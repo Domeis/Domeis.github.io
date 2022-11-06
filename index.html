@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://prod.spline.design/RQYgKuE10Uy82lCl/scene.splinecode" as="fetch">
+    <title>Whani Kim</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Whani Kim</a>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <ul class="nav_links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id=home>
+        <p class=stage> Phase 1.</p>
+        <h1 class=name>Growth </h1>
+        <p class=name-description>Like a lobster that has outgrown its shell. This phase is aligned by the urge to
+            grow<span id="dots">.</span><span id="more">.
+
+                <br> The growth is directed and deliberate. Absorbing knowledge deemed useful, and rejecting those that
+                are not.
+
+                <br><br> It has become quite an obsession. Starting side projects, reading books and articles, learning
+                new
+                skills, weightlifting… anything related to growth.
+
+                <br><br> I’m a thinker by nature. It’s a challenge for me to turn these thoughts into something
+                tangible.
+                But the
+                urge to grow has been overpowering my tendency to live inside my head.
+
+                <br><br> This site is a part of that desire to grow into something bigger. Conceptualized during
+                graduate
+                school,
+                it has been swept under the rug for quite sometime. This was a creative outlet to funnel people in and
+                let them know about me and my growth.</span> <br>
+
+            <a onclick="ReadMore()" id="MoreButton">Read More</a>
+        </p>
+        <img src="images/spline_web3.jpg" class="Spline">
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id=about>
+        <h1 class="about_me">About Me</h1>
+        <p class="my_description">I'm currently working as an UX Researcher at Buyrus Design. <br>
+            I come from a dedicated psychology background with a Master's in Cognitive Psychology. <br>
+            My current motivations include developing my unique research principles. <br>
+            Working at a design agency, I've had the opportunity to work across many industries including automative and
+            cosmetics.
+            <a class="my_description" href="pdfs/Resume_WhaniKim.pdf" target="_blank"> Resume </a>
+        </p>
+        <img src="images/doublediamond.png" alt="double" class="double">
+        <!--  <img class="profile" src="images/profile.jpeg" alt="Dom"> -->
+
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section id=projects>
+        <div class="projectContainer">
+            <div class="projectCard"> <a href="pdfs/HRI.pdf"><img src="images/robot.png" alt="HRI">
+                    <div class="text">Human-Robot Interaction</div>
+            </div>
+            <div class="projectCard"> <a href="pdfs/EdTech.pdf"><img src="images/Edtech.png" alt="Edtech">
+                    <div class="text"> EdTech </div>
+                </a>
+            </div>
+            <div class="projectCard"> <a href="pdfs/Mental.pdf"><img src="images/Mental.png" alt="mental">
+                    <div class="text">Mental Health App</div>
+                </a>
+            </div>
+            <div class="projectCard"> <a href="pdfs/Smartwatch.pdf"><img src="images/smartwatch.png" alt="smartwatch">
+                    <div class="text">Smartwatch</div>
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Contact SECTION -->
+    <section id=contact>
+        <h1>Get in touch!</h1>
+        <div class="contact_Container">
+
+            <form method="POST" action="https://api.slapform.com/whani.kim405@gmail.com">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="usermail" placeholder="Email">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+
+                <input type="submit" value="Send">
+
+            </form>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+        integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+        crossorigin="anonymous">
+        </script>
+    <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
