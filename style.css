@@ -383,8 +383,7 @@ nav .logo {
 
 @media (max-width: 400px) {
   * {
-    font-size: 4rem;
-    overflow: hidden;
+    font-size: 3vw;
   }
 
   img {
