@@ -28,13 +28,14 @@ html {
 /* Home Section */
 #home {
   position: relative;
-  background-color: rgb(84, 84, 84);
+  /* background-color: rgb(84, 84, 84); */
+  background-color: #eeee;
 }
 
 .stage {
   position: absolute;
   text-align: left;
-  color: rgb(228, 220, 220);
+  color: rgb(0, 0, 0);
   padding: 5px 10%;
   top: 120px;
   z-index: 1;
@@ -46,7 +47,7 @@ html {
   padding: 0px 10%;
   top: 170px;
   line-height: 90px;
-  color: rgb(228, 220, 220);
+  color: rgb(0, 0, 0);
   overflow: hidden;
   z-index: 1;
 }
@@ -54,7 +55,7 @@ html {
 .name-description {
   position: absolute;
   text-align: left;
-  color: rgb(228, 220, 220);
+  color: rgb(0, 0, 0);
   padding: 0px 10%;
   top: 270px;
   overflow-wrap: break-word;
@@ -98,15 +99,18 @@ html {
   width: auto;
   text-decoration: none;
   text-decoration: none;
-  background-color: #4135ec;
+  background-color: #181818;
   border-radius: 100px;
-  padding: 7px;
+  padding: 5px 15px;
+  margin-top: 10px;
   font-size: 1rem;
   text-align: center;
+  color: #ffff;
+  cursor: pointer;
 }
 
 .name-description a:hover {
-  background-color: #4150ec;
+  background-color: #18181818;
 }
 
 /* .landing_pic {
@@ -195,14 +199,16 @@ html {
 .projectCard {
   position: relative;
   text-align: center;
-  background-color: black;
+
+  background-color: rgb(24, 24, 24);
   color: white;
 }
 
 .projectCard img {
   max-height: 25vh;
   width: 100%;
-  object-fit:cover;
+  padding: 0px 10%; 
+  object-fit: cover;
   opacity: 0.5;
 }
 
@@ -305,7 +311,7 @@ nav li {
 
 nav .logo {
   position: relative;
-  color: #fff;
+  color: #eeee;
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
@@ -314,7 +320,7 @@ nav .logo {
 }
 
 .on-scroll {
-  background: #fff;
+  background: #eeee;
   color: black;
   box-shadow: 0px 0px 15px 5px #00000078;
   backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
@@ -338,11 +344,11 @@ nav .logo {
 .nav_links li {
   display: inline-block;
   padding: 0px 20px;
-  color: rgb(228, 220, 220);
+  color: #eeee;
 }
 
 .nav_links li a {
-  color: white;
+  color:#eeee;
   text-decoration: none;
   font-weight: bold;
 }
