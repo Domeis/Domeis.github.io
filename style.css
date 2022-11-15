@@ -155,7 +155,7 @@ html {
   width: 20%;
   padding: 2px;
   text-decoration: none;
-  background-color: #4135ec;
+  background-color: #181818;
   border-radius: 25px;
   font-size: 1rem;
   text-align: center;
@@ -163,7 +163,7 @@ html {
 }
 
 .my_description a:hover {
-  background-color: #4150ec;
+  background-color: #282828;
 }
 
 .double {
@@ -278,7 +278,7 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
-  background-color: #4135ec;
+  background-color: #eeee;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -288,7 +288,7 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #4150ec;
+  background-color: #ffff;
 }
 
 /* NAV BAR Section */
@@ -354,8 +354,8 @@ nav .logo {
 }
 
 .nav_links li a:hover {
-  color:#061bff;
-  text-shadow: #4150ec;;
+  color:#FF0000;
+  text-shadow: #ff0000c2;;
 }
 
 
@@ -392,11 +392,6 @@ nav .logo {
     font-size: 3vw;
   }
 
-  img {
-    height: 100%;
-    width: 100%;
-  }
-
   nav {
     display: flex;
     position: fixed;
@@ -408,9 +403,11 @@ nav .logo {
     padding: 30px 10%;
     background: transparent;
     backdrop-filter: blur(20px) saturate(160%);
+  }
 
-  #contact h1 {
+    #contact h1 {
     position: absolute;
+    text-align: center;
     color: rgb(228, 220, 220);
     top: 10%;
     left: 50%;
@@ -418,11 +415,41 @@ nav .logo {
     font-size: 3.5rem;
     transform: translate(-50%, -50%);
   }
-  
-  .name-description
-  {
-    font-size: 3.3vw;
+
+  #projects {
+    background-color: rgb(24, 24, 24);
+    min-height: 25vh;
+    position: relative;
   }
-
-
-}
+  
+  .projectContainer {
+    min-height: 25vh;
+    display: block;
+  }
+  
+  .projectCard {
+    position: relative;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+  }
+  
+  .projectCard img {
+    max-height: 25vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+  
+  .projectCard img:hover {
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .text {
+    position: absolute;
+    padding: 0px 10%;
+  }
