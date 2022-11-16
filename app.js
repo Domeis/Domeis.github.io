@@ -20,6 +20,7 @@ const navSlide = () => {
     burger.classList.toggle("toggle");
   });
 };
+navSlide();
 
 const tl = gsap.timeline({ defaults: { ease: "power0.out" } });
 
@@ -67,7 +68,6 @@ function ReadMore() {
   }
 }
 
-navSlide();
 // const header = document.querySelector("header");
 // const home = document.querySelector("home");
 
