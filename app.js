@@ -21,8 +21,6 @@ const navSlide = () => {
   });
 };
 
-navSlide();
-
 const tl = gsap.timeline({ defaults: { ease: "power0.out" } });
 
 tl.fromTo(
@@ -68,6 +66,8 @@ function ReadMore() {
     moreText.toggle(more.Text);
   }
 }
+
+navSlide();
 // const header = document.querySelector("header");
 // const home = document.querySelector("home");
 
