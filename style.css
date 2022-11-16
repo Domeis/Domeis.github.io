@@ -64,14 +64,14 @@ html {
 
 #home button {
   position: absolute;
-  diplay: block;
+  display: block;
   padding: 0px 2%;
-  color:rgb(235, 6, 6)
+  color: rgb(235, 6, 6);
   text-decoration: none;
   text-align: center;
   transition: all 0.5s;
-  }
-  
+}
+
 #more {
   display: none;
 }
@@ -172,10 +172,8 @@ html {
   pointer-events: none;
   width: 100vw;
   height: 100vh;
-
-  
 }
- /* .profile {
+/* .profile {
   position: absolute;
   width: 25%;
   max-width: 100%;
@@ -184,7 +182,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 75%;
-} */  
+} */
 
 /* Projects Section */
 #projects {
@@ -207,7 +205,7 @@ html {
 .projectCard img {
   max-height: 25vh;
   width: 100%;
-  padding: 0px 10%; 
+  padding: 0px 10%;
   object-fit: cover;
   opacity: 0.5;
 }
@@ -328,7 +326,7 @@ nav .logo {
     brightness(140%);
 }
 
-.on-scroll .navigation li: :after {
+.on-scroll .navigation li :after {
   display: block;
   content: " ";
   border-bottom: solid 3px black;
@@ -348,25 +346,39 @@ nav .logo {
 }
 
 .nav_links li a {
-  color:#eeee;
+  color: #eeee;
   text-decoration: none;
   font-weight: bold;
 }
 
 .nav_links li a:hover {
-  color:#FF0000;
-  text-shadow: #ff0000c2;;
+  color: #ff0000;
+  text-shadow: #ff0000c2;
 }
 
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #eeee;
+  margin: 5px;
+}
 
-@media (max-width: 820px) {
+@media screen and (max-width: 820px) {
   * {
-    font-size: 2vw; 
+    font-size: 2vw;
   }
 
-    img {
+  img {
     height: 100vh;
     width: 100vw;
+  }
+
+  nav {
+    background: transparent;
+    backdrop-filter: blur(20px) saturate(160%);
   }
 
   #contact h1 {
@@ -378,34 +390,87 @@ nav .logo {
     font-size: 3rem;
     transform: translate(-50%, -50%);
   }
-  
-  .name-description
-  {
+
+  .name-description {
     font-size: 2vw;
   }
-
-
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 600px) {
   * {
     font-size: 3vw;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   nav {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    z-index: 10;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
     background: transparent;
     backdrop-filter: blur(20px) saturate(160%);
   }
 
-    #contact h1 {
+  .nav_links {
+    position: absolute;
+    right: 0px;
+    height: 96vh;
+    top: 8.8vh;
+    background: transparent;
+    backdrop-filter: blur(20px) saturate(160%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav_links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #eeee;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+    background: transparent;
+    backdrop-filter: blur(20px) saturate(160%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  #contact h1 {
     position: absolute;
     text-align: center;
     color: rgb(228, 220, 220);
@@ -417,39 +482,33 @@ nav .logo {
   }
 
   #projects {
-    background-color: rgb(24, 24, 24);
     min-height: 25vh;
     position: relative;
   }
-  
+
   .projectContainer {
     min-height: 25vh;
     display: block;
   }
-  
+
   .projectCard {
     position: relative;
     text-align: center;
-    background-color: black;
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 2vw;
   }
-  
+
   .projectCard img {
     max-height: 25vh;
     width: 100%;
     object-fit: cover;
     opacity: 0.5;
   }
-  
+
   .projectCard img:hover {
     opacity: 1;
     transition: 0.5s;
     cursor: pointer;
   }
-  
-  .text {
-    position: absolute;
-    padding: 0px 10%;
-  }
+}
