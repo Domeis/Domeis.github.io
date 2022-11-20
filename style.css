@@ -28,13 +28,13 @@ html {
 /* Home Section */
 #home {
   position: relative;
-  background-color: rgb(84, 84, 84);
+  background-color: #eeee;
 }
 
 .stage {
   position: absolute;
   text-align: left;
-  color: rgb(228, 220, 220);
+  color: rgb(0, 0, 0);
   padding: 5px 10%;
   top: 120px;
   z-index: 1;
@@ -46,7 +46,7 @@ html {
   padding: 0px 10%;
   top: 170px;
   line-height: 90px;
-  color: rgb(228, 220, 220);
+  color: rgb(0, 0, 0);
   overflow: hidden;
   z-index: 1;
 }
@@ -54,7 +54,7 @@ html {
 .name-description {
   position: absolute;
   text-align: left;
-  color: rgb(228, 220, 220);
+  color: rgb(0, 0, 0);
   padding: 0px 10%;
   top: 270px;
   overflow-wrap: break-word;
@@ -75,30 +75,12 @@ html {
   display: none;
 }
 
-#Spline_contain {
-  position: absolute;
-  overflow: hidden;
-  height: 1vh;
-  width: 1vw;
-}
-
-.Spline {
-  position: absolute;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  pointer-events: none;
-}
-
 .name-description a {
   position: absolute;
   width: auto;
   text-decoration: none;
   text-decoration: none;
-  background-color: #4135ec;
+  background-color: #181818;
   border-radius: 100px;
   padding: 7px;
   font-size: 1rem;
@@ -106,7 +88,7 @@ html {
 }
 
 .name-description a:hover {
-  background-color: #4150ec;
+  background-color: #18181818;
 }
 
 /* .landing_pic {
@@ -151,7 +133,7 @@ html {
   width: 20%;
   padding: 2px;
   text-decoration: none;
-  background-color: #4135ec;
+  background-color: #181818;
   border-radius: 25px;
   font-size: 1rem;
   text-align: center;
@@ -159,7 +141,7 @@ html {
 }
 
 .my_description a:hover {
-  background-color: #4150ec;
+  background-color: #282828;
 }
 
 .double {
@@ -271,7 +253,7 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
-  background-color: #4135ec;
+  background-color: rgb(0, 0, 0);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -281,7 +263,7 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #4150ec;
+  background-color: #ffff;
 }
 
 /* NAV BAR Section */
@@ -304,7 +286,7 @@ nav li {
 
 nav .logo {
   position: relative;
-  color: #fff;
+  color: #eeee;
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
@@ -337,7 +319,7 @@ nav .logo {
 .nav_links li {
   display: inline-block;
   padding: 0px 20px;
-  color: rgb(228, 220, 220);
+  color: #eeee;
 }
 
 .nav_links li a {
@@ -352,9 +334,13 @@ nav .logo {
 }
 
 
-@media (max-width: 820px) {
+@media screen and (max-width: 820px) {
   * {
-    font-size: 3vw; 
+    font-size: 2vw; 
+  }
+  
+  nav {
+    background: black;
   }
 
   #contact h1 {
@@ -369,15 +355,23 @@ nav .logo {
   
   .name-description
   {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
 
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   * {
     font-size: 3.3vw; 
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    background: black;
   }
 
   #contact h1 {
