@@ -119,7 +119,7 @@ html {
 .my_description {
   position: absolute;
   display: inline-block;
-  color: #181818;
+  color: #(228,220,220);
   padding: 0px 10%;
   top: 32%;
   padding: 0px 10%;
@@ -135,7 +135,7 @@ html {
   width: 20%;
   padding: 2px;
   text-decoration: none;
-  background-color: #4135ec;
+  background-color: #181818;
   border-radius: 25px;
   font-size: 1rem;
   text-align: center;
@@ -143,7 +143,7 @@ html {
 }
 
 .my_description a:hover {
-  background-color: #4150ec;
+  background-color: #282828;
 }
 
 .double {
@@ -265,7 +265,7 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #4150ec;
+  background-color: #ffff;
 }
 
 /* NAV BAR Section */
