@@ -334,6 +334,16 @@ nav .logo {
   text-shadow: #4150ec;;
 }
 
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #eeee;
+  margin: 5px;
+}
 
 @media screen and (max-width: 820px) {
   * {
