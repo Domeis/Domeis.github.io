@@ -364,7 +364,7 @@ nav .logo {
 
 @media screen and (max-width: 400px) {
   * {
-    font-size: 3.3vw; 
+    font-size: 3vw; 
   }
   
   body {
@@ -388,14 +388,6 @@ nav .logo {
   .name-description
   {
     font-size: 3.3vw;
-  }
-
-   * {
-    font-size: 3vw;
-  }
-
-  body {
-    overflow-x: hidden;
   }
 
   nav {
