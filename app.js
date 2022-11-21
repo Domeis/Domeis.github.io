@@ -65,7 +65,6 @@ function ReadMore() {
     dots.style.display = "none";
     btnText.innerHTML = "Read Less";
     moreText.style.display = "inline";
-    moreText.toggle(more.Text);
   }
 }
 
