@@ -90,7 +90,7 @@ html {
 }
 
 .name-description a:hover {
-  background-color: #18181818;
+  background-color: #282828;
 }
 
 /* .landing_pic {
@@ -265,7 +265,7 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #ffff;
+  background-color: #282828;
 }
 
 /* NAV BAR Section */
