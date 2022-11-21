@@ -26,8 +26,8 @@ navSlide();
 const tl = gsap.timeline({ defaults: { ease: "power0.out" } });
 
 tl.fromTo(
-  "nav",
-  { x: "-10%", opacity: 0 },
+  "nav li",
+  { x: "-15%", opacity: 0 },
   { x: "0%", opacity: 1, duration: 0.5 }
 );
 
