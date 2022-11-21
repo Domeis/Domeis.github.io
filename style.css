@@ -347,9 +347,15 @@ nav .logo {
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 975px) {
+  * {
+    font-size: 1rem 
+  }
+  
+  
 @media screen and (max-width: 820px) {
   * {
-    font-size: 2vw; 
+    font-size: 1rem; 
   }
   
   nav {
@@ -385,6 +391,11 @@ nav .logo {
 
   nav {
     background: black;
+  }
+  
+  .projectCard .text{
+    font-size: 1.5rem;
+
   }
 
   #contact h1 {
