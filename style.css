@@ -139,6 +139,7 @@ html {
   font-size: 1rem;
   text-align: center;
   z-index: 1;
+  padding: 0px 10%;
 }
 
 .my_description a:hover {
